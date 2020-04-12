@@ -1,2 +1,2 @@
 # SiteClima
- Site para procurar e mostrar detalhes do clima em uma determinada cidade.
+ Site para procurar e mostrar detalhes do clima de uma determinada cidade.
