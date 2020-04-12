@@ -2,6 +2,10 @@
 body {
     font-family: 'Dancing Script', cursive;
     font-size: 20pt;
+    color: brown;
+    background-image: url("./clouds-in-the-sky-during-sunset-3584430.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h1 {
@@ -10,4 +14,17 @@ h1 {
 
 h2 {
     text-align: center;
+}
+
+section#corpo {
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+footer {
+    font: bold italic 12pt Times;
+    position: absolute;
+    bottom: 0px;
+    left: 600px;
 }
