@@ -10,11 +10,24 @@
 
 <body>
     <header>
-
+        <h1>
+            Clima da sua cidade
+        </h1>
+        <h2>
+            Aqui você pode ver o clima de qualquer cidade a sua escolha.
+        </h2>
     </header>
 
     <section>
+        <div id="EntradaNome">
+            Digite a cidade que deseja saber o clima <input type="text" name="cidade" id="cidade">
+            <input type="button" value="Procurar" onclick="procurar()">
+        </div>
 
+        <div id="Resultado">
+            <h3 id="cidade"></h3>
+            <p id="temp"></p>
+        </div>
     </section>
 
     <script src="./clima.js">
