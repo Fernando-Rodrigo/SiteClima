@@ -15,11 +15,11 @@ button.addEventListener('click', function(name) {
             var descValue = data['weather'][0]['description'];
 
             main.innerHTML = nameValue;
-            desc.innerHTML = "Desc - " + descValue;
-            temp.innerHTML = "Temp - " + tempValue;
+            desc.innerHTML = "Descrição - " + descValue;
+            temp.innerHTML = "Temperatura - " + tempValue + '°C';
             input.value = "";
 
         })
 
-    .catch(err => alert("Wrong city name!"));
+    .catch(err => alert("Nome errado da cidade!"));
 })
