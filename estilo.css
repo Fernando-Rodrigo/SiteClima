@@ -20,13 +20,14 @@ section#corpo {
     box-shadow: 5px 5px 10px black;
     border-radius: 10px;
     padding: 10px;
-    display: block;
-    float: left;
+    font-size: 20pt;
+    width: 1315px;
+    height: 500px;
 }
 
 footer {
-    font: bold italic 12pt Times;
-    position: absolute;
-    bottom: 0px;
-    left: 600px;
+    clear: both;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 14pt;
 }
