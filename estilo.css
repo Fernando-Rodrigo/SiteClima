@@ -20,6 +20,7 @@ section#corpo {
     box-shadow: 5px 5px 10px black;
     border-radius: 10px;
     padding: 10px;
+    position: absolute;
 }
 
 footer {

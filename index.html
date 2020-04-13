@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="estilo.css">
     <title>Clima</title>
 </head>
@@ -19,17 +20,19 @@
     </header>
 
     <section id="corpo">
-        <div id="EntradaNome">
-            Digite a cidade que deseja saber o clima <input type="text" name="cidadep" id="cidadep">
-            <input type="button" value="Procurar" onclick="procurar()">
+        <div class="input">
+            <input type="text" placeholder="Enter the city" class="input_text">
+            <input type="submit" value="Submit" class="submit">
+        </div>
         </div>
 
-        <div id="Resultado">
-            <h3 class="cidader"></h3>
-            <p class="temp"></p>
-            <p class="nebulusidade"></p>
-            <p class="umidade"></p>
-            <p class="pa"></p>
+        <div class="container">
+            <div class="card">
+                <h1 class="name" id="name"></h1>
+                <p class="temp"></p>
+                <p class="clouds"></p>
+                <p class="desc"></p>
+            </div>
         </div>
     </section>
 
@@ -37,7 +40,7 @@
     </script>
 
     <footer>
-        &copy; Fernando-2020 and Foto de Disha Sheta no Pexels
+        &copy; Fernando-2020 e Foto de Disha Sheta no Pexels
     </footer>
 
 </body>
