@@ -3,8 +3,11 @@ var main = document.querySelector('#name')
 var desc = document.querySelector('.desc')
 var temp = document.querySelector('.temp')
 var feels_like = document.querySelector('.feels_like')
+var temp_min = document.querySelector('.temp_min')
+var temp_max = document.querySelector('.temp_max')
 var pressao = document.querySelector('.pressao')
 var umidade = document.querySelector('.umidade')
+var wind = document.querySelector('.wind')
 var button = document.querySelector('.submit')
 
 
@@ -15,16 +18,21 @@ button.addEventListener('click', function(name) {
             var nameValue = data['name']
             var tempValue = data['main']['temp']
             var feels_likeValue = data['main']['feels_like']
+            var temp_minValue = data['main']['temp_min']
+            var temp_maxValue = data['main']['temp_max']
             var descValue = data['weather'][0]['description']
             var pressaoValue = data['main']['pressure']
             var umidadeValue = data['main']['humidity']
+            var windValue = data['wind']['speed']
 
             main.innerHTML = nameValue;
-            desc.innerHTML = "Condição metereológica: " + descValue
-            temp.innerHTML = "Temperatura: " + tempValue + '°C'
-            feels_like.innerHTML = "Sensação térmica: " + feels_likeValue + "°C"
+            desc.innerHTML = 'Condição metereológica: ' + descValue
+            temp.innerHTML = 'Temperatura: ' + tempValue + '°C'
+            feels_like.innerHTML = "Sensação térmica: " + feels_likeValue + '°C'
+            temp_min.innerHTML = 'Temperatura mínima: ' + temp_minValue + '°C'
             pressao.innerHTML = 'Pressão atmosférica: ' + pressaoValue + ' hPa'
             umidade.innerHTML = 'Umidade: ' + umidadeValue + '%'
+            wind.innerHTML = 'Velocidade do vento: ' + windValue + 'm/s'
             input.value = ""
 
         })
