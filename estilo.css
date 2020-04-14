@@ -2,7 +2,7 @@
 body {
     font-family: 'Dancing Script', cursive;
     font-size: 20pt;
-    color: brown;
+    color: black;
     background-image: url("./clouds-in-the-sky-during-sunset-3584430.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -20,9 +20,13 @@ section#corpo {
     box-shadow: 5px 5px 10px black;
     border-radius: 10px;
     padding: 10px;
-    font-size: 20pt;
+    font-size: 16pt;
     width: 1315px;
     height: 500px;
+}
+
+div#container {
+    height: 450px;
 }
 
 footer {
