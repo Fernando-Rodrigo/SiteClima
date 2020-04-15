@@ -12,7 +12,7 @@ var clouds = document.querySelector('.clouds')
 var button = document.querySelector('.submit')
 
 
-button.addEventListener('click', function(name) {
+button.addEventListener('click', function (name) {
     fetch('https://api.openweathermap.org/data/2.5/weather?q=' + input.value + '&units=metric&appid=9a4afdb555b5bbbe28fbdd8df81ecccc&lang=pt')
         .then(response => response.json())
         .then(data => {
@@ -41,5 +41,5 @@ button.addEventListener('click', function(name) {
 
         })
 
-    .catch(err => alert("Nome errado da cidade!"))
+        .catch(err => alert("Nome errado da cidade!"))
 })
