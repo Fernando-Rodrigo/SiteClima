@@ -8,6 +8,7 @@ var temp_max = document.querySelector('.temp_max')
 var pressao = document.querySelector('.pressao')
 var umidade = document.querySelector('.umidade')
 var wind = document.querySelector('.wind')
+var clouds = document.querySelector('.clouds')
 var button = document.querySelector('.submit')
 
 
@@ -24,15 +25,18 @@ button.addEventListener('click', function(name) {
             var pressaoValue = data['main']['pressure']
             var umidadeValue = data['main']['humidity']
             var windValue = data['wind']['speed']
+            var clooudsValue = data['clouds']['all']
 
             main.innerHTML = nameValue;
             desc.innerHTML = 'Condição metereológica: ' + descValue
             temp.innerHTML = 'Temperatura: ' + tempValue + '°C'
             feels_like.innerHTML = "Sensação térmica: " + feels_likeValue + '°C'
             temp_min.innerHTML = 'Temperatura mínima: ' + temp_minValue + '°C'
+            temp_max.innerHTML = 'Temperatura máxima: ' + temp_maxValue + '°C'
             pressao.innerHTML = 'Pressão atmosférica: ' + pressaoValue + ' hPa'
             umidade.innerHTML = 'Umidade: ' + umidadeValue + '%'
             wind.innerHTML = 'Velocidade do vento: ' + windValue + 'm/s'
+            clouds.innerHTML = 'Nebulosidade: ' + clooudsValue + '%'
             input.value = ""
 
         })
