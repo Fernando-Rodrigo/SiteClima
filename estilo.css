@@ -37,6 +37,7 @@ div#container {
 
 footer {
     clear: both;
+    padding-top: 15px;
     margin-bottom: 5px;
     text-align: center;
     font-size: 14pt;
