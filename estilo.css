@@ -17,13 +17,18 @@ h2 {
     text-align: center;
 }
 
+p{
+    text-indent: 10px;
+}
+
 section#corpo {
     box-shadow: 5px 5px 10px black;
     border-radius: 10px;
     padding: 10px;
     font-size: 16pt;
     width: 1315px;
-    height: 500px;
+    height: 515px;
+    text-indent: 5px;
 }
 
 div#container {
