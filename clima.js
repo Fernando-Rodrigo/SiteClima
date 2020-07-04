@@ -1,4 +1,4 @@
-var input = document.querySelector('.input_text')
+var input = document.querySelector('#input_text')
 var main = document.querySelector('#name')
 var desc = document.querySelector('.desc')
 var temp = document.querySelector('.temp')

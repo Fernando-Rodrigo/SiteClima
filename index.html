@@ -12,15 +12,15 @@
 
 <body>
     <header>
-        <h1>Clima da sua cidade</h1>
-        <h2> Aqui você pode ver o clima de qualquer cidade a sua escolha.</h2>
+        <h1>Seu Clima</h1>
+        <h2> Veja o clima de qualquer cidade a sua escolha.</h2>
     </header>
     <section>
-        Cidade: <input type="text" placeholder="Digite o nome da cidade" class="input_text" list="cidade">
+        <label for="input_text"><strong>Cidade:</strong></label><input type="text" placeholder="Digite o nome da cidade" id="input_text" list="cidades">
         <input type="submit" value="Procurar" class="submit">
         <!--adicionei a lista de cidades para melhor entendimento do usuario(botei os maires municípios de cada região)-->
         <!--Continua funcionando com todas a cidade(não sei uma forma melhor e mais rápida de adicionar todas a scidades)-->
-        <datalist id="cidade">
+        <datalist id="cidades">
             <optgroup label="Centro-oeste">
                 <option value="Brasília"></option>
                 <option value="Goiânia"></option>
