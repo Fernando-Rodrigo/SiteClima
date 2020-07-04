@@ -6,56 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="estilo.css">
-    <link rel="shortcut icon" href="Imagens/iconeclima.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Imagens/fav-icon.png" type="image/x-icon">
     <title>Clima</title>
 </head>
 
 <body>
     <header>
         <h1>
-            Clima da sua cidade
+            Seu Clima
         </h1>
-        <h2>
-            Aqui você pode ver o clima de qualquer cidade a sua escolha.
-        </h2>
     </header>
 
     <section id="corpo">
-        <div class="input">
+        
             <div class="input">
-                Cidade: <input type="text" placeholder="Digite o nome da cidade" class="input_text">
-                <input type="submit" value="Procurar" class="submit">
-            </div>
-        </div>
-
-        <div class="container" id="container">
-            <div class="card">
-                <h1 class="name" id="name"></h1>
-                <p class="desc"></p>
-                <p class="clouds"></p>
-                <p class="temp"></p>
-                <p class="feels_like"></p>
-                <p class="temp_min"></p>
-                <p class="temp_max"></p>
-                <p class="pressao"></p>
-                <p class="umidade"></p>
-                <p class="wind"></p>
+                <div class="input">
+                    Cidade: <input type="text" placeholder='Cidade' class="input_text">
+                    <input type="submit" value="Procurar" class="submit">
+                </div>
             </div>
 
-        </div>
-        <div id="footer">
-            <footer>
-                <p>
-                    &copy; Fernando-2020
-                </p>
-                <p>
-                    <a href="https://github.com/Fernando-Rodrigo" target="_blank"><img src="Imagens/github.png" alt="github"></a>
-                </p>
-                <p>
-                    <a href="https://www.pexels.com/pt-br/foto/ao-ar-livre-arvores-cenico-clima-1591447/" target="_blank">&copy; Foto de Guillaume Meurice no Pexels</a>
-                </p>
-            </footer>
-        </div>
+            <div class="container" id="container">
+                <div class="card">
+                    <p class="name" id="name"></p>
+                    <p class="desc"></p>
+                    <p class="clouds"></p>
+                    <p class="temp"></p>
+                    <p class="feels_like"></p>
+                    <p class="temp_min"></p>
+                    <p class="temp_max"></p>
+                    <p class="pressao"></p>
+                    <p class="umidade"></p>
+                    <p class="wind"></p>
+                </div>
+
+            </div>
+            <div id="footer">
+                <footer>
+                    <p>
+                        &copy; Fernando-2020
+                    </p>
+                    <p>
+                        <a href="https://github.com/Fernando-Rodrigo" target="_blank"><img src="Imagens/github.png"
+                                alt="github"></a>
+                    </p>
+                </footer>
+            </div>
     </section>
 
     <script src="./clima.js">

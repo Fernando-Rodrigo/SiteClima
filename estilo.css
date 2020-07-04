@@ -1,38 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&display=swap');
-
 body {
-    font-family: 'Dancing Script', cursive;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 20pt;
-    color: rgb(198, 95, 120);
-    background-image: url("./Imagens/photography-of-fall-trees-1591447.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    color: black;
 }
 
 h1 {
     text-align: center;
+    position: ;
 }
 
-h2 {
-    text-align: center;
-}
-
-p{
+p {
     text-indent: 10px;
+    text-transform: capitalize;
+}
+
+p#name{
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 150px;
 }
 
 section#corpo {
-    box-shadow: 5px 5px 10px black;
+    position: absolute;
+    left: 50%;
+    top: 135px;
+    padding-left: 10px ;
+    transform: translateX(-250px);
     border-radius: 10px;
     padding: 10px;
     font-size: 16pt;
-    width: 1315px;
-    height: 515px;
+    width: 450px;
+    height: 500px;
     text-indent: 5px;
+    background: linear-gradient(145deg, #d8dbdd, #ffffff);
+    box-shadow: 20px 20px 60px #cccfd0, -20px -20px 60px #ffffff;
 }
 
 div#container {
     height: 450px;
+}
+
+div#texto {
+    text-align: center;
+    font-weight: 400;
+    padding-top: -15px;
 }
 
 footer {
