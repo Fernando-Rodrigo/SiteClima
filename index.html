@@ -12,23 +12,105 @@
 
 <body>
     <header>
-        <h1>
-            Clima da sua cidade
-        </h1>
-        <h2>
-            Aqui você pode ver o clima de qualquer cidade a sua escolha.
-        </h2>
+        <h1>Clima da sua cidade</h1>
+        <h2> Aqui você pode ver o clima de qualquer cidade a sua escolha.</h2>
     </header>
-
-    <section id="corpo">
-        <div class="input">
-            <div class="input">
-                Cidade: <input type="text" placeholder="Digite o nome da cidade" class="input_text">
-                <input type="submit" value="Procurar" class="submit">
-            </div>
-        </div>
-
-        <div class="container" id="container">
+    <section>
+        Cidade: <input type="text" placeholder="Digite o nome da cidade" class="input_text" list="cidade">
+        <input type="submit" value="Procurar" class="submit">
+        <!--adicionei a lista de cidades para melhor entendimento do usuario(botei os maires municípios de cada região)-->
+        <!--Continua funcionando com todas a cidade(não sei uma forma melhor e mais rápida de adicionar todas a scidades)-->
+        <datalist id="cidade">
+            <optgroup label="Centro-oeste">
+                <option value="Brasília"></option>
+                <option value="Goiânia"></option>
+                <option value="Campo Grande"></option>
+                <option value="Cuiabá"></option>
+                <option value="Aparecida de Goiânia"></option>
+                <option value="Anápolis"></option>
+                <option value="Várzea Grande"></option>
+                <option value="Rio Verde"></option>
+                <option value="Rondonópolis"></option>
+                <option value="Dourados"></option>
+                <option value="Águas Lindas de Goiás"></option>
+                <option value="Luziânia"></option>
+            </optgroup>
+            <optgroup label="Nordeste">
+                <option value="Fernando de Noronha"></option>
+                <option value="Recife"></option>
+                <option value="Salvador"></option>
+                <option value="Fortaleza"></option>
+                <option value="São Luís"></option>
+                <option value="Natal"></option>
+                <option value="João Pessoa"></option>
+                <option value="Feira de Santana"></option>
+                <option value="Maceió"></option>
+                <option value="Teresina"></option>
+                <option value="Camaçari"></option>
+                <option value=" Aracaju"></option>
+                <option value="Campina Grande"></option>
+                <option value="Mossoró"></option>
+            </optgroup>
+            <optgroup label="Norte">
+                <option value="Amazonas"></option>
+                <option value="Belém"></option>
+                <option value="Ananindeua"></option>
+                <option value="Porto Velho"></option>
+                <option value="Macapá"></option>
+                <option value="Rio Branco"></option>
+                <option value="Boa Vista"></option>
+                <option value="Santarém"></option>
+                <option value="Palmas"></option>
+                <option value="Marabá"></option>
+                <option value="Parauapebas"></option>
+                <option value="Castanhal"></option>
+            </optgroup>
+            <optgroup label="Sudeste">
+                <option value="Osasco"></option>
+                <option value="São José dos Campos"></option>
+                <option value="Santo André"></option>
+                <option value="Nova Iguaçu"></option>
+                <option value="São Bernardo do Campo"></option>
+                <option value="Duque de Caxias"></option>
+                <option value="São Gonçalo"></option>
+                <option value="Campinas"></option>
+                <option value="Guarulhos"></option>
+                <option value="Belo Horizonte"></option>
+                <option value="Rio de janeiro"></option>
+                <option value="São Paulo"></option>
+                <option value="Ribeirão Preto"></option>
+                <option value="Uberlândia"></option>
+                <option value="Sorocaba"></option>
+                <option value="Contagem"></option>
+                <option value="Juiz de Fora"></option>
+                <option value="Niterói"></option>
+                <option value="Belford Roxo"></option>
+                <option value="Campos dos Goytacazes"></option>
+                <option value="Vila Velha"></option>
+                <option value="Mauá"></option>
+                <option value="São João de Meriti"></option>
+                <option value="Jardim Catarina"></option>
+                <option value="Friburgo"></option>
+            </optgroup>
+            <optgroup label="Sul">
+                <option value="Florianópolis"></option>
+                <option value="Curitiba"></option>
+                <option value="Porto Alegre"></option>
+                <option value="Joinville"></option>
+                <option value="Londrina"></option>
+                <option value="Caxias do Sul"></option>
+                <option value="Maringá"></option>
+                <option value="Blumenau"></option>
+                <option value="Ponta Grossa"></option>
+                <option value="Canoas"></option>
+                <option value="Pelotas"></option>
+                <option value="Cascavel"></option>
+                <option value="Balneário Camboriú"></option>
+                <option value="Gramado"></option>
+                <option value="Rio Grande"></option>
+            </optgroup>
+        </datalist>
+        <div id="container">
             <div class="card">
                 <h1 class="name" id="name"></h1>
                 <p class="desc"></p>
@@ -41,26 +123,12 @@
                 <p class="umidade"></p>
                 <p class="wind"></p>
             </div>
-
-        </div>
-        <div id="footer">
-            <footer>
-                <p>
-                    &copy; Fernando-2020
-                </p>
-                <p>
-                    <a href="https://github.com/Fernando-Rodrigo" target="_blank"><img src="Imagens/github.png" alt="github"></a>
-                </p>
-                <p>
-                    <a href="https://www.pexels.com/pt-br/foto/ao-ar-livre-arvores-cenico-clima-1591447/" target="_blank">&copy; Foto de Guillaume Meurice no Pexels</a>
-                </p>
-            </footer>
         </div>
     </section>
-
-    <script src="./clima.js">
-    </script>
-
+     <footer>
+        <p>&copy; Fernando-2020</p>
+        <p><a href="https://github.com/Fernando-Rodrigo" target="_blank"><img src="Imagens/github.png" alt="github"></a></p>
+    </footer>
+    <script src="./clima.js"></script>
 </body>
-
 </html>
