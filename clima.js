@@ -41,5 +41,5 @@ button.addEventListener('click', function (name) {
 
         })
 
-        .catch(err => alert("Nome errado da cidade!"))
+        .catch(err => alert("Nome da cidade não encontrado!"))
 })
