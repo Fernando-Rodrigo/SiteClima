@@ -42,11 +42,12 @@ button.addEventListener('click', function (name) {
 
             main.innerHTML = nameValue;
             /*eu gosto de usar o placeholder ao inves de concatenar assim->`Umidade: ${umidadeValue} %` (sempre com crase)*/
-            desc.innerHTML = '<strong>Condição metereológica: ' + descValue + '</strong>'/*Adicionei a tag strong para ficar em negrito*/
+            /*Adicionei a tag strong para ficar em negrito  os <br> pra ficar melhor nos celulares*/
+            desc.innerHTML = '<strong>Condição metereológica: ' + descValue + '</strong>'
             temp.innerHTML = 'Temperatura: <strong>' + tempValue + '°C</strong>'
             feels_like.innerHTML = 'Sensação térmica: <strong>' + feels_likeValue + '°C</strong>'
-            temp_min.innerHTML = 'Temperatura mínima: <strong>' + temp_minValue + '°C</strong>'
-            temp_max.innerHTML = 'Temperatura máxima: <strong>' + temp_maxValue + '°C</strong>'
+            temp_min.innerHTML = 'Temp. mínima: <strong>' + temp_minValue + '°C</strong>'
+            temp_max.innerHTML = 'Temp. máxima: <strong>' + temp_maxValue + '°C</strong>'
             pressao.innerHTML = 'Pressão atmosférica: <strong>' + pressaoValue + ' hPa</strong>'
             umidade.innerHTML = 'Umidade: <strong>' + umidadeValue + '%</strong>'
             wind.innerHTML = 'Velocidade do vento: <strong>' + windValue + ' m/s</strong>'
