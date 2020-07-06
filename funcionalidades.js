@@ -1,0 +1,1 @@
+/*degradê do fundo de acordo com a temperatura*/

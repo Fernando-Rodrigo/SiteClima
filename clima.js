@@ -11,8 +11,19 @@ var wind = document.querySelector('.wind')
 var clouds = document.querySelector('.clouds')
 var button = document.querySelector('.submit')
 
+/*faz o botão mudar de cor quando o cursor esta sobre ele*/
+button.addEventListener('mouseover', function(){
+    button.style.backgroundColor = '#0e182c'
+})
+/*faz o botão mudar para cor original quando o cursor sai dele*/
+button.addEventListener('mouseout', function(){
+    button.style.backgroundColor = '#13213d'
+})
 
 button.addEventListener('click', function (name) {
+    /*faz o botão mudar de cor quando se clica nele*/
+    button.style.backgroundColor = '#080e1a'
+
     /*fiz isso pq estava demorando mto para exibir as informações, e caso o user tiver um erro e depois achar a cidade certa , o erro aparecia por um tempo ainda(assim ele limpa rapido)*/
     desc.innerHTML = ''
     fetch('https://api.openweathermap.org/data/2.5/weather?q=' + input.value + '&units=metric&appid=9a4afdb555b5bbbe28fbdd8df81ecccc&lang=pt')
