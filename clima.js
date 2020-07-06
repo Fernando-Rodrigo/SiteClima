@@ -70,6 +70,6 @@ button.addEventListener('click', function (name) {
         umidade.innerHTML = ''
         wind.innerHTML = ''
         clouds.innerHTML = ''
-        /*assim q essa função for executada o foco vai pro input(pto usuario não precisar levar o mouse até lá)*/
+        /*assim q essa função for executada o foco vai pro input(para o usuario não precisar levar o mouse até lá)*/
         input.focus()
 })
